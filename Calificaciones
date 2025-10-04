@@ -1,0 +1,19 @@
+# Programa para calcular el promedio de calificaciones de 10 estudiantes
+
+# Lista para almacenar las calificaciones
+calificaciones = []
+
+print("Ingrese las calificaciones de 10 estudiantes:")
+
+# Bucle para pedir las 10 calificaciones
+for i in range(1, 11):
+    nota = float(input(f"Ingrese la calificación del estudiante {i}: "))
+    calificaciones.append(nota)
+
+# Calcular el promedio
+promedio = sum(calificaciones) / len(calificaciones)
+
+# Mostrar resultados
+print("\n--- Resultados ---")
+print("Calificaciones:", calificaciones)
+print("Promedio de la clase:", round(promedio, 2))
